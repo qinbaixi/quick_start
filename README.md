@@ -1,0 +1,9 @@
+quick_start
+=====
+
+An OTP application
+
+Build
+-----
+
+    $ rebar3 compile

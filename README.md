@@ -5,5 +5,5 @@ An OTP application
 
 Build
 -----
-
-    $ rebar3 compile
+run scripts/qcompile.bat
+then run scripts/start_all.bat

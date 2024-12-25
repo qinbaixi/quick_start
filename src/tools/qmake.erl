@@ -497,5 +497,6 @@ compile_first() ->
         "./src/tools/lager/lager_util.erl"],
     Opts = [{i, "include"}, {outdir, "ebin"}],
     compile_files(CompileFirstL, Opts),
+    code:load_file(lager_util),
     ok.
 

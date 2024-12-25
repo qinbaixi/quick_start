@@ -24,3 +24,6 @@
 
 %% 表名定义
 -define(ETS_ENV_CONFIG, ets_env_config).        %% 环境变量
+
+-define(ETS_PROCESS_PID_LOCAL, ets_process_pid_local).    %% 本地节点进程注册
+-define(ETS_PROCESS_PID_REMOTE, ets_process_pid_remote).  %% 远端节点进程注册

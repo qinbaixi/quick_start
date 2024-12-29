@@ -29,7 +29,7 @@ start_nodes() ->
     NodeID = list_to_integer(NodeIDStr),
     ?INFO("starting node ~w:~w", [NodeID, node()]),
     if
-        NodeID =:= 10 ->
+        NodeID > 0 ->
             node_logic:start([NodeID]);
         true ->
             ignore
@@ -41,7 +41,7 @@ stop_node() ->
     NodeID = list_to_integer(NodeIDStr),
     ?INFO("stoping node ~w:~w", [NodeID, node()]),
     if
-        NodeID =:= 10 ->
+        NodeID > 0 ->
             node_logic:stop();
         true ->
             ignore

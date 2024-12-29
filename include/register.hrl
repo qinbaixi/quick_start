@@ -15,4 +15,5 @@
     node
 }).
 
+-define(VIA_NAME(Name), {via, svr_register, Name}).
 -endif.

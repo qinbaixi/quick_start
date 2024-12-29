@@ -26,6 +26,7 @@
 start([_NodeId]) ->
     ?START_WORKER(?TOP_SUP, svr_register, []),
     ?START_WORKER(?TOP_SUP, svr_node_basic, []),
+    ?START_SUP(?TOP_SUP, sup_mfa, []),
     svr_node_basic:logic_ready(),
     ok.
 
